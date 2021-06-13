@@ -1,6 +1,8 @@
 package com.example.personfinder.Networking;
 
 
+import com.example.personfinder.Model.LoginResponse;
+
 import java.util.List;
 
 import okhttp3.RequestBody;
@@ -14,6 +16,23 @@ import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 public interface ApiInterface {
+
+
+    @FormUrlEncoded
+    @POST(NetworkConstants.LOGIN)
+    Call<LoginResponse> login(@Field("UserName") String email, @Field("Password") String password,@Field("token") String token);
+
+    @FormUrlEncoded
+    @POST(NetworkConstants.REGISTER)
+    Call<LoginResponse> register(@Field("UserName") String UserName,
+                                 @Field("UserEmail") String UserEmail,
+                                 @Field("password") String password,
+                                 @Field("DateOfBirth") String DateOfBirth,
+                                 @Field("MobileNo") String MobileNo,
+                                 @Field("UserAddress") String UserAddress,
+                                 @Field("Gender") String Gender);
+
+
 
 //    @GET(NetworkConstants.GETOFFERS)
 //    Call<Offers> getOffers(@Query("api_token") String api_token,
@@ -29,19 +48,8 @@ public interface ApiInterface {
 //
 //    @GET(NetworkConstants.INTERESTS)
 //    Call<Interests.MyResponse> getAllInterests();
-//
-//    @FormUrlEncoded
-//    @POST(NetworkConstants.LOGIN)
-//    Call<LoginResponse> login(@Field("email") String email, @Field("password") String password);
-//
-//    @FormUrlEncoded
-//    @POST(NetworkConstants.REGISTER)
-//    Call<LoginResponse> register(@Field("email") String email,
-//                                 @Field("password") String password,
-//                                 @Field("person_name") String person_name,
-//                                 @Field("company_name") String company_name,
-//                                 @Field("timezone") String timezone);
-//
+
+
 //    @FormUrlEncoded
 //    @POST(NetworkConstants.CREATEOFFER)
 //    Call<ResponseBody> createOffer(@Query("api_token") String api_token,

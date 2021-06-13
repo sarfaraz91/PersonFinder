@@ -46,7 +46,8 @@
                     android:src="@drawable/camera"
                     android:clickable="false"
                     android:layout_margin="@dimen/dimen_16dp"
-                    app:tint="@color/colorWhite" />
+                    app:tint="@color/colorWhite"
+                    android:visibility="gone"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -55,7 +56,8 @@
                     android:text="@string/select_a_profile_picture_n_optional"
                     android:textAllCaps="true"
                     android:gravity="center"
-                    android:textSize="@dimen/dimen_13sp"/>
+                    android:textSize="@dimen/dimen_13sp"
+                    android:visibility="gone"/>
 
                 <EditText
                     android:id="@+id/user_name_et"
@@ -138,9 +140,68 @@
                     android:textColor="@color/colorWhite"
                     android:textColorHint="@color/colorTextHint"
                     android:textSize="13sp"
+                    android:visibility="gone"
                     />
 
+                <EditText
+                    android:id="@+id/dob_et"
+                    android:layout_width="@dimen/dimen_300dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="DD / MM / YYYY"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:background="@drawable/background_grey_stroke_rectangle"
+                    android:scrollHorizontally="true"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorTextHint"
+                    android:textSize="13sp"
+                    />
 
+                <EditText
+                    android:id="@+id/mob_no_et"
+                    android:layout_width="@dimen/dimen_300dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="Phone Number"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:background="@drawable/background_grey_stroke_rectangle"
+                    android:scrollHorizontally="true"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorTextHint"
+                    android:textSize="13sp"
+                    />
+
+                <EditText
+                    android:id="@+id/user_address_et"
+                    android:layout_width="@dimen/dimen_300dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="Address"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:background="@drawable/background_grey_stroke_rectangle"
+                    android:scrollHorizontally="true"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorTextHint"
+                    android:textSize="13sp"
+                    />
+
+                <EditText
+                    android:id="@+id/gender_et"
+                    android:layout_width="@dimen/dimen_300dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="Gender"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:background="@drawable/background_grey_stroke_rectangle"
+                    android:scrollHorizontally="true"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorTextHint"
+                    android:textSize="13sp"
+                    />
 
 
                 <Button
