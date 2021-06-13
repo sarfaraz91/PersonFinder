@@ -1,303 +1,96 @@
 <resources>
     <string name="app_name">PersonFinder</string>
 
-<string name="title_activity_main">MainActivity</string>
-<string name="navigation_drawer_open">Open navigation drawer</string>
-<string name="navigation_drawer_close">Close navigation drawer</string>
-<string name="nav_header_title">Android Studio</string>
-<string name="nav_header_subtitle">android.studio@android.com</string>
-<string name="nav_header_desc">Navigation header</string>
-<string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">My Profile</string>
+    <string name="menu_map">Map</string>
 
-<string name="menu_home">Home</string>
-<string name="menu_gallery">Gallery</string>
-<string name="menu_slideshow">Slideshow</string>
-<string name="my_interest">My Interests</string>
+    <!-- Fragment Change Password-->
 
-<!-- Fragment Change Password-->
-<string name="old_password">Old Password</string>
-<string name="new_password">New Password</string>
-<string name="re_confirm_password">Re-confirm Password</string>
-<string name="password_donot_match">Passwords donot match.</string>
-<string name="success">Success!</string>
-<string name="password_change_success_msg">Password has been changed successfully.</string>
-<string name="password_change_error_msg">An unknown error occurred while changing the password.</string>
-<string name="error">Error!</string>
-<string name="incorrect_old_password">Incorrect old password.</string>
-<string name="change_pass_w8_msg">Changing password, please wait.</string>
-<string name="loding">Loading...</string>
+    <!-- Reset Password Strings-->
 
-<!-- Reset Password Strings-->
-<string name="reset_password_success_message">Successfully reset yout password, please check your email.</string>
+    <!-- Contact us Dialog fragment-->
 
-<!-- Contact us Dialog fragment-->
-<string name="conact_message">Thanks for reaching out,\nour team will be happy to support you.</string>
-<string name="call_us">Call Us</string>
-<string name="email_us">Email Us</string>
-<string name="none">none</string>
+    <!-- Sweet Alert Strings -->
 
-<!-- Sweet Alert Strings -->
-<string name="swal_text_settings">Settings</string>
-<string name="swal_text_cancel">Cancel</string>
-<string name="swal_text_warning">Warning</string>
-<string name="swal_text_yes">Yes</string>
-<string name="swal_text_no">No</string>
-<string name="swal_text_confirmation">Confirmation</string>
-<string name="swal_text_confirmation_logout">Are you sure, you want to logout ?</string>
+    <!-- Permission Strings -->
 
-<!-- Permission Strings -->
-<string name="permission_location">This application needs GPS location permission to proceed, Please enable GPS permission from settings.</string>
-<string name="permission_call">This application needs calling permission to proceed, Please enable calling permission from settings.</string>
-<string name="permission_camera">This application needs calling permission to proceed, Please enable Camera permission from settings.</string>
-<string name="permission_gallery">This application needs calling permission to proceed, Please enable External Storage permission from settings.</string>
-<string name="title_activity_home">HomeActivity</string>
+    <string name="email_address">Email Address</string>
+    <string name="username">Username</string>
 
-<string name="title">title</string>
-<string name="sending_verification">Sending verification code.</string>
-<string name="request_new_password">Request New Password</string>
-<string name="enter_you_email_address">Enter you Email Address</string>
-<string name="email_address">Email Address</string>
-<string name="username">Username</string>
-<string name="email_address_or_phone">Email Address/Phone Number</string>
+    <!-- Error Strings -->
 
-<!-- Error Strings -->
-<string name="error_title">Error</string>
-<string name="error_internet_not_connected">Internet not connected</string>
-<string name="error_invalid_full_name">Please enter a valid full name with space(s)</string>
-<string name="error_invalid_credentials">Invalid Username or Password!</string>
-<string name="error_no_nearby_drivers">No nearby drivers found</string>
-<string name="invalidPasswordError">Please enter a valid 14 digits password.</string>
+    <!-- Generic Strings -->
 
-<!-- Generic Strings -->
-<string name="generic_title_ok">OK</string>
-<string name="generic_text_loading">Loading ...</string>
+    <!-- Activity Sign Up -->
+    <string name="password">Password</string>
 
-<!-- Activity Sign Up -->
-<string name="sign_up_with_google">Sign Up with Google</string>
-<string name="sign_up_with_facebook">Sign Up with facebook</string>
-<string name="full_name">Full Name</string>
-<string name="enter_your_full_name">Enter your full name</string>
-<string name="email">Email</string>
-<string name="your_e_mail_goes_here">Your e-mail goes here</string>
-<string name="your_e_mail_goes_here_optional">Your e-mail goes here (Optional)</string>
-<string name="password_hint">*************</string>
-<string name="password">Password</string>
-<string name="phone_number">Phone Number</string>
-<string name="_92">+92</string>
-<string name="sign_up">Sign Up</string>
-<string name="by_signup_with_eclinic_cars_you_agree">By Signing Up with E-Clinic you agree</string>
-<string name="to_the">to the</string>
-<string name="terms_and_conditions"> terms and conditions</string>
+    <!-- Toast Strings -->
 
-<!-- Toast Strings -->
-<string name="toast_message_back_exit">Please click BACK again to exit</string>
+    <!-- Activity Forgot Password -->
 
-<!-- Activity Forgot Password -->
-<string name="text_forgot_pw_help">Enter 14-digit password provided by the Company</string>
-<string name="text_forgot_enter_pw">ENTER PASSWORD</string>
-<string name="text_resend_password">Resend Password</string>
-<string name="text_confirm_password">Confirm Password</string>
+    <!-- Activity SignIn -->
+    <string name="text_forgot_password">Forgot Password?</string>
 
-<!-- Activity SignIn -->
-<string name="text_hint_user_id">USER EMAIL</string>
-<string name="text_hint_password">PASSWORD</string>
-<string name="text_forgot_password">Forgot Password?</string>
-<string name="text_sign_in">Sign In</string>
-<string name="text_sign_up">Sign Up</string>
-<string name="text_signing_in">Signing in...</string>
-<string name="text_signing_up">Signing up...</string>
+    <!-- Activity Title -->
 
-<!-- Activity Title -->
-<string name="title_activity_sign_in">Sign In</string>
-<string name="title_activity_forgot_password">Forgot Password</string>
-<string name="drawer_open">drawer open</string>
-<string name="drawer_close">drawer close</string>
+    <!-- FontPaths -->
 
-<!-- FontPaths -->
-<string name="fontPathbold">fonts/AvenirNextLTProBold.otf</string>
-<string name="fontPathSemibold">fonts/AvenirNextLTProDemi.otf</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="register">Register</string>
 
-<!-- TODO: Remove or change this placeholder text -->
-<string name="hello_blank_fragment">Hello blank fragment</string>
-<string name="add_doctor">Add doctor</string>
-<string name="send_me_a_new_password">Send me a new password</string>
-<string name="text_find_doctors">Find a best doctor for your help \nand your family.</string>
-<string name="register">Register</string>
-<string name="info">Info</string>
-<string name="unable_to_sign_in_with_google">Unable to sign in with google.</string>
-<string name="by_signingup_with_you_agree">By Signing Up you agree</string>
-<string name="doctor">Doctor</string>
-<string name="user">User</string>
-<string name="my_appointments">My Appointments</string>
-<string name="search_for_questions">Search for Questions</string>
-<string name="logout">Logout</string>
-<string name="bit6_api_key">3yrr9-DMI11ZuoC9Ti</string>
+    <!-- Common text strings -->
 
-<!-- Common text strings -->
-<string name="ok">OK</string>
-<string name="cancel">Cancel</string>
-<string name="answer_call">Answer</string>
-<string name="reject_call">Reject</string>
+    <!-- MainActivity -->
 
-<!-- MainActivity -->
-<string name="main_username_hint">User name</string>
-<string name="main_password_hint">Password</string>
-<string name="main_login">Login</string>
-<string name="main_signup">Sign Up</string>
+    <!-- ChatActivity menu -->
 
-<!-- ChatActivity menu -->
-<string name="chat_menu_video_call">Video Call</string>
-<string name="chat_menu_voice_call">Voice Call</string>
-<string name="chat_menu_group_details">Group Details</string>
-<string name="chat_menu_group_delete">Delete Group</string>
+    <!-- ComposeView menu in ChatActivity -->
 
-<!-- ComposeView menu in ChatActivity -->
-<string name="compose_choose_photo">Choose Photo</string>
-<string name="compose_take_photo">Take Photo</string>
-<string name="compose_record_video">Record Video</string>
-<string name="compose_share_location">Share Location</string>
+    <!-- ChatsActivity -->
 
-<!-- ChatsActivity -->
-<string name="chats_menu_pstn_call">Phone Call</string>
-<string name="chats_menu_direct_chat">Direct Chat</string>
-<string name="chats_menu_create_group">Create Group</string>
+    <!-- CallActivity - In-call UI -->
 
-<string name="pstn_dialog_phone_number_hint">+1 (xxx) xxx-xxxx </string>
-<string name="pstn_dialog_message">Call a US or Canada phone</string>
-<string name="pstn_dialog_title">Test Phone Call</string>
+    <!-- GroupActivity -->
 
-<string name="direct_chat_dialog_title">Direct Chat</string>
-<string name="create_group_dialog_title">Create Group</string>
+    <!-- Error messages -->
 
-<!-- CallActivity - In-call UI -->
-<string name="call_add_participant_dialog_title">Select Contact</string>
-<string name="incoming_call_text">%1$s is calling …</string>
-<string name="incoming_call">Incoming call </string>
-<string name="incoming_call_answer">Answer</string>
-<string name="incoming_call_reject">Reject</string>
+    <!--settings-->
 
-<!-- GroupActivity -->
-<string name="group_menu_edit_title">Edit Title</string>
-<string name="group_menu_delete_group">Delete Group</string>
-<string name="group_invite_member_button">Invite Member</string>
-<string name="group_invite_member_dialog_title">Invite Member</string>
+    <!-- all -->
 
-<!-- Error messages -->
-<string name="error_invalid_phone_number">Invalid phone number</string>
-<string name="error_incorrect_credentials">Incorrect username/password</string>
+    <!-- main -->
 
-<!--settings-->
-<string name="dev">Development</string>
-<string name="prod">Production</string>
-<string name="media_mode">Media Mode</string>
-<string name="environment">Environment</string>
-<string name="api_key">API key</string>
-<string name="websocket">Websocket</string>
-<string name="connected">connected</string>
-<string name="disconnected">disconnected</string>
-<string name="my_identity">Own identity</string>
-<string name="display_name">Display name</string>
-<string name="change_profile_picture">Change Profile Picture</string>
-<string name="name">Name</string>
-<string name="mobile">Mobile</string>
-<string name="language">Language</string>
-<string name="change_password">Change Password</string>
-<string name="update">Update</string>
-<string name="save">Save</string>
-<string name="domain_name">\@telepolyclinic.com</string>
-<string name="availability">Availability</string>
+    <!-- login -->
 
-<!-- all -->
-<string name="all_app_version">Sample UI v%1$s / SDK v%2$s</string>
+    <!-- Open Channel List -->
 
-<string name="all_create">Create</string>
-<string name="all_invite">Invite</string>
+    <!-- Group Channel List -->
 
-<string name="all_group_channels">Group Channels</string>
-<string name="all_open_channels">Open Channels</string>
+    <!-- Content descriptions -->
 
-<!-- main -->
-<string name="main_drawer_open">Open navigation drawer</string>
-<string name="main_drawer_close">Close navigation drawer</string>
-<string name="select_channel_type">Select channel type</string>
-<string name="settings">Settings</string>
-<string name="blocked_members_list">Blocked members</string>
+    <!-- Menu actions -->
+    <string name="lbl_ok">Ok</string>
+    <string name="lbl_network_error">Internet Connectivity Error</string>
+    <!-- Message Status -->
+    <string name="skip"><u>Skip</u></string>
+    <string name="login">LOGIN</string>
+    <string name="login_with_facebook">LOGIN WITH FACEBOOK</string>
+    <string name="select_a_profile_picture_n_optional">Select a profile picture\n(Optional)</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="company_name">Company Name</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
 
-<!-- login -->
-<string name="login_user_id">User ID</string>
-<string name="login_user_nickname">Nickname</string>
-<string name="login_connect">Connect</string>
-<string name="login_disconnect">Disconnect</string>
 
-<!-- Open Channel List -->
-<string name="open_channel_list_participant_count">%1$d participants</string>
-
-<string name="create_open_channel">Create Open Channel</string>
-<string name="participant_list">Participants</string>
-
-<!-- Group Channel List -->
-<string name="group_channel_list_file_message_text">%1$s has uploaded a file.</string>
-
-<string name="create_group_channel">Create Group Channel</string>
-<string name="member_list">Members</string>
-<string name="invite_member">Invite members</string>
-
-<string name="member_info"></string>
-
-<!-- Content descriptions -->
-<string name="open_channel_chat_content_desc_profile">Profile image</string>
-
-<!-- Menu actions -->
-<string name="action_create_channel">Create channel</string>
-<string name="lbl_ok">Ok</string>
-<string name="download">Download</string>
-<string name="upload">Upload</string>
-<string name="resend_message">Resend</string>
-<string name="delete_message">Delete</string>
-<string name="lbl_network_error">Internet Connectivity Error</string>
-<!-- Message Status -->
-<string name="message_sending">Sending</string>
-<string name="message_failed">Failed</string>
-<string name="keys">Keys</string>
-<string name="skip"><u>Skip</u></string>
-<string name="login">LOGIN</string>
-<string name="login_small">Login</string>
-<string name="login_with_facebook">LOGIN WITH FACEBOOK</string>
-<string name="new_offers_web">NEW OFFERS WEB</string>
-<string name="select_a_profile_picture_n_optional">Select a profile picture\n(Optional)</string>
-<string name="repeat_password">Repeat Password</string>
-<string name="send">Send</string>
-<string name="please_enter_email_address">PLease enter email address\nso that we can send you a link\nto reset your password.</string>
-<string name="rd_email">Email required</string>
-<string name="rd_password">Password required</string>
-<string name="rd_email_pass">Email and password required</string>
-<string name="rd_email_incorrect">Email is incorrect</string>
-<string name="company_name">Company Name</string>
-<string name="rd_username">Username required</string>
-<string name="rd_passwords_not_match">Repeat password not matched with password</string>
-<string name="rd_repeat_pass">Repeat password required</string>
-<string name="rd_company">Compnay name required</string>
-<string name="my_offers">My Offers</string>
-<string name="favourites">Favourites</string>
-<string name="about_us">About Us</string>
-<string name="faq">FAQ</string>
-<string name="post_an_offer">Post an Offer</string>
-<string name="draft">DRAFT</string>
-<string name="scheduled">SCHEDULED</string>
-<string name="published">PUBLISHED</string>
-<string name="upload_images">Please Upload Images</string>
-<string name="next">Next</string>
-<string name="enter_brand_name">Please enter the brand name</string>
-<string name="enter_product_name">Please enter the product name</string>
-<string name="enter_model_number">Please enter the model number (optional)</string>
-<string name="enter_offer">Please enter the offer</string>
-<string name="enter_more_details">Please enter more details about your offer</string>
-<string name="preview">PREVIEW</string>
-<string name="preview_offer">Preview Offer</string>
-<string name="publish">PUBLISH</string>
-<string name="enter_youtube_link">Paste Youtube video link (optional)</string>
-<string name="enter_website_link">Paste Website link (optional)</string>
-<string name="enter_store_location">Set store location</string>
+    <string name="no_record">No Record Found</string>
+    <string name="no_records_details">It looks like there are no records \navailable.</string>
+    <string name="fName">First Name</string>
+    <string name="surName">Surname</string>
+    <string name="email">Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="note">Please click here to change the profile picture</string>
+    <string name="cell_number">Cell Number</string>
+    <string name="confirm_password">Confirm Password</string>
 
 
 </resources>

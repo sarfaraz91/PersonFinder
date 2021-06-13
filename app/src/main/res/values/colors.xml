@@ -1,64 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#8c4a6e</color>
-    <color name="colorPrimaryDark">#59203f</color>
     <color name="colorAccent">#ffffff</color>
     <color name="colorPurple">#59203f</color>
     <color name="colorPink">#ee4255</color>
-    <color name="colorGreen">#17b078</color>
-    <color name="colorLightGreen">#56B411</color>
-    <color name="colorRed">#BE1F18</color>
-    <color name="colorRedTransparent">#28d42a25</color>
-    <color name="colorTransparent">#00FFFFFF</color>
     <color name="colorTextHint">#d4d3d3</color>
     <color name="colorWhite">#ffffff</color>
-    <color name="colorBlack">#000000</color>
-    <color name="colorDarkPurple">#592140</color>
-    <color name="colorOrange">#DB3D36</color>
-    <color name="colorBlue">#468AD9</color>
-    <color name="colorLightBlue_500">#70468ad9</color>
-    <color name="colorGrey">#363636</color>
     <color name="colorLighterGrey">#d3d7d9</color>
-    <color name="colorLightGrey">#95989A</color>
-    <color name="colorDarkGrey">#363636</color>
     <color name="colorBlueFB">#39579a</color>
-    <color name="colorOrangeGoogle">#DE4931</color>
-    <color name="colorBlueTwitter">#29ABE2</color>
-    <color name="colorGreyBackground">#44dadada</color>
 
-    <color name="colorPinkLight">#F64C4D</color>
+    <color name="colorPrimary">#1e88e5</color>
+    <color name="primaryLightColor">#6ab7ff</color>
+    <color name="colorPrimaryDark">#005cb2</color>
+    <color name="secondaryColor">#2962ff</color>
+    <color name="secondaryLightColor">#768fff</color>
+    <color name="secondaryDarkColor">#0039cb</color>
+    <color name="primaryTextColor">#eceff1</color>
+    <color name="secondaryTextColor">#fafafa</color>
 
     <!-- Open Chat -->
-    <color name="openChatText">#47505d</color>
-    <color name="openChatNicknameOther">#3a414d</color>
-    <color name="openChatNicknameMe">#00BCD4</color>
 
     <!-- Group Chat -->
-    <color name="groupChatBubbleMe">#774df2</color>
-    <color name="groupChatTextMe">#ffffff</color>
-    <color name="groupChatBubbleOther">#eef1f6</color>
-    <color name="groupChatTextOther">#000000</color>
-
-    <color name="groupChatReadReceiptMe">#1fcc94</color>
-    <color name="groupChatReadReceiptOther">#00BCD4</color>
-
-    <color name="groupChatAdminBackground">#e0fcff</color>
-    <color name="groupChatAdminText">#39474e</color>
-
-    <color name="groupChatDateText">#ffffff</color>
-    <color name="groupChatDateBackground">#C0C0C0</color>
 
     <!-- Group Channel List -->
-    <color name="groupChannelUnreadCountBackground">#7d62df</color>
-    <color name="groupChannelUnreadCountText">#ffffff</color>
 
     <!-- Selector -->
-    <color name="btn_create">#ffffff</color>
-    <color name="btn_create_disabled">#c1acff</color>
-    <color name="btn_edit">#ffffff</color>
-    <color name="btn_edit_disabled">#c1acff</color>
-    <color name="btn_send">#774df2</color>
-    <color name="btn_send_disabled">#8e8e8e</color>
 
     <color name="color_yellow">#FCCF33</color>
     <color name="color_purple">#987190</color>
