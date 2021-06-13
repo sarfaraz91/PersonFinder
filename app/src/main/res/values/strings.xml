@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">PersonFinder</string>
 
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">My Profile</string>
+    <string name="menu_map">Map</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -59,6 +62,8 @@
     <string name="email_address">Email Address</string>
     <string name="username">Username</string>
     <string name="email_address_or_phone">Email Address/Phone Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="username">Username</string>
 
     <!-- Error Strings -->
     <string name="error_title">Error</string>
@@ -88,6 +93,8 @@
     <string name="by_signup_with_eclinic_cars_you_agree">By Signing Up with E-Clinic you agree</string>
     <string name="to_the">to the</string>
     <string name="terms_and_conditions"> terms and conditions</string>
+    <!-- Activity Sign Up -->
+    <string name="password">Password</string>
 
     <!-- Toast Strings -->
     <string name="toast_message_back_exit">Please click BACK again to exit</string>
@@ -106,6 +113,8 @@
     <string name="text_sign_up">Sign Up</string>
     <string name="text_signing_in">Signing in...</string>
     <string name="text_signing_up">Signing up...</string>
+    <!-- Activity SignIn -->
+    <string name="text_forgot_password">Forgot Password?</string>
 
     <!-- Activity Title -->
     <string name="title_activity_sign_in">Sign In</string>
@@ -132,6 +141,8 @@
     <string name="search_for_questions">Search for Questions</string>
     <string name="logout">Logout</string>
     <string name="bit6_api_key">3yrr9-DMI11ZuoC9Ti</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="register">Register</string>
 
     <!-- Common text strings -->
     <string name="ok">OK</string>
@@ -302,6 +313,28 @@
     <string name="enter_youtube_link">Paste Youtube video link (optional)</string>
     <string name="enter_website_link">Paste Website link (optional)</string>
     <string name="enter_store_location">Set store location</string>
+    <!-- Menu actions -->
+    <string name="lbl_ok">Ok</string>
+    <string name="lbl_network_error">Internet Connectivity Error</string>
+    <!-- Message Status -->
+    <string name="skip"><u>Skip</u></string>
+    <string name="login">LOGIN</string>
+    <string name="login_with_facebook">LOGIN WITH FACEBOOK</string>
+    <string name="select_a_profile_picture_n_optional">Select a profile picture\n(Optional)</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="company_name">Company Name</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+
+
+    <string name="no_record">No Record Found</string>
+    <string name="no_records_details">It looks like there are no records \navailable.</string>
+    <string name="fName">First Name</string>
+    <string name="surName">Surname</string>
+    <string name="email">Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="note">Please click here to change the profile picture</string>
+    <string name="cell_number">Cell Number</string>
+    <string name="confirm_password">Confirm Password</string>
 
 
 </resources>

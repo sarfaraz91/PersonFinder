@@ -1,19 +1,14 @@
 package com.example.personfinder.Networking;
 
 
+import com.example.personfinder.ui.person_listing.model.PersonComplaintListingRoot;
 import com.example.personfinder.Model.LoginResponse;
 
 import java.util.List;
 
-import okhttp3.RequestBody;
-import okhttp3.ResponseBody;
 import retrofit2.Call;
-import retrofit2.http.Body;
-import retrofit2.http.Field;
-import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
-import retrofit2.http.POST;
-import retrofit2.http.Query;
+import retrofit2.http.Header;
 
 public interface ApiInterface {
 
@@ -76,18 +71,28 @@ public interface ApiInterface {
 //                                        @Query("latitude") String latitude,
 //                                        @Query("longitude") String longitude,
 //                                        @Query("km") String km);
+////
+//@FormUrlEncoded
+//@POST(NetworkConstants.PUBLISH_OFFER)
+//Call<ResponseBody> publishOffer(@Query("api_token") String api_token,
+//                                @Query("offer_id") String offer_id,
+//                                @Query("ids") String ids,
+//                                @Field("gender") String gender,
+//                                @Field("target_age") String target_age,
+//                                @Field("latitude") String latitude,
+//                                @Field("longitude") String longitude,
+//                                @Field("schedule_date") String schedule_date,
+//                                @Field("schedule_time") String schedule_time,
+//                                @Field("time") String time);
 //
-//    @FormUrlEncoded
-//    @POST(NetworkConstants.PUBLISH_OFFER)
-//    Call<ResponseBody> publishOffer(@Query("api_token") String api_token,
-//                                    @Query("offer_id") String offer_id,
-//                                    @Query("ids") String ids,
-//                                    @Field("gender") String gender,
-//                                    @Field("target_age") String target_age,
-//                                    @Field("latitude") String latitude,
-//                                    @Field("longitude") String longitude,
-//                                    @Field("schedule_date") String schedule_date,
-//                                    @Field("schedule_time") String schedule_time,
-//                                    @Field("time") String time);
+
+
+    @GET("/FindService/ComplaintList")
+    Call<PersonComplaintListingRoot> getComplaints(
+            @Header("Authorization") String authorization);
+
+//    @GET(NetworkConstants.GET_COMPLAINTS)
+//    Call<PersonComplaintListingRoot> getComplaints(
+//            @Header("Authorization") String authorization);
 
 }

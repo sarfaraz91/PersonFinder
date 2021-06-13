@@ -10,6 +10,7 @@ public class NetworkConstants {
     public static final String CREATEOFFER = "/api/marketer/offer";
     public static final String GETOFFERS = "/api/marketer/offer";
     public static final String PUBLISH_OFFER = "/api/marketer/offer/market";
+    public static final String GET_COMPLAINTS = "/FindService/ComplaintList";
 
     public static final String HOME_API = "/api/user/offers";
 
