@@ -7,15 +7,18 @@ import com.example.personfinder.Model.LoginResponse;
 import java.util.List;
 
 import retrofit2.Call;
+import retrofit2.http.Field;
+import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
+import retrofit2.http.POST;
 
 public interface ApiInterface {
 
 
     @FormUrlEncoded
     @POST(NetworkConstants.LOGIN)
-    Call<LoginResponse> login(@Field("UserName") String email, @Field("Password") String password,@Field("token") String token);
+    Call<LoginResponse> login(@Field("UserName") String email, @Field("Password") String password, @Field("token") String token);
 
     @FormUrlEncoded
     @POST(NetworkConstants.REGISTER)

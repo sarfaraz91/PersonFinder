@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.personfinder.GeneralClasses.PreferencesHandler;
 import com.example.personfinder.R;
+import com.example.personfinder.ui.main_activity.MainActivity;
 import com.example.personfinder.ui.sign_in.SignInActivity;
 
 public class SplashActivity extends AppCompatActivity {
@@ -29,13 +30,13 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 startActivity(new Intent(SplashActivity.this, SignInActivity.class));
                 finish();
-//                if (preferencesHandler.getLoginstatus() == true) {
-//                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
-//                    finish();
-//                }else{
-//                    startActivity(new Intent(SplashActivity.this, SignInActivity.class));
-//                    finish();
-//                }
+                if (preferencesHandler.getLoginstatus() == true) {
+                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                    finish();
+                }else{
+                    startActivity(new Intent(SplashActivity.this, SignInActivity.class));
+                    finish();
+                }
 
             }
         }, 1500);

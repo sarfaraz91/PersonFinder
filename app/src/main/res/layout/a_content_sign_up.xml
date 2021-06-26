@@ -148,7 +148,8 @@
                     android:layout_width="@dimen/dimen_300dp"
                     android:layout_height="@dimen/dimen_40dp"
                     android:layout_marginTop="@dimen/dimen_16dp"
-                    android:text="DD / MM / YYYY"
+                    android:hint="@string/dob"
+                    android:text=""
                     android:paddingLeft="@dimen/dimen_10dp"
                     android:paddingRight="@dimen/dimen_10dp"
                     android:background="@drawable/background_grey_stroke_rectangle"
@@ -156,6 +157,8 @@
                     android:textColor="@color/colorWhite"
                     android:textColorHint="@color/colorTextHint"
                     android:textSize="13sp"
+                    android:cursorVisible="false"
+                    android:focusable="false"
                     />
 
                 <EditText
@@ -163,7 +166,8 @@
                     android:layout_width="@dimen/dimen_300dp"
                     android:layout_height="@dimen/dimen_40dp"
                     android:layout_marginTop="@dimen/dimen_16dp"
-                    android:text="Phone Number"
+                    android:text=""
+                    android:hint="@string/phone_number"
                     android:paddingLeft="@dimen/dimen_10dp"
                     android:paddingRight="@dimen/dimen_10dp"
                     android:background="@drawable/background_grey_stroke_rectangle"
@@ -171,6 +175,7 @@
                     android:textColor="@color/colorWhite"
                     android:textColorHint="@color/colorTextHint"
                     android:textSize="13sp"
+                    android:inputType="number"
                     />
 
                 <EditText
@@ -178,7 +183,8 @@
                     android:layout_width="@dimen/dimen_300dp"
                     android:layout_height="@dimen/dimen_40dp"
                     android:layout_marginTop="@dimen/dimen_16dp"
-                    android:text="Address"
+                    android:text=""
+                    android:hint="@string/address"
                     android:paddingLeft="@dimen/dimen_10dp"
                     android:paddingRight="@dimen/dimen_10dp"
                     android:background="@drawable/background_grey_stroke_rectangle"
@@ -193,7 +199,8 @@
                     android:layout_width="@dimen/dimen_300dp"
                     android:layout_height="@dimen/dimen_40dp"
                     android:layout_marginTop="@dimen/dimen_16dp"
-                    android:text="Gender"
+                    android:text=""
+                    android:hint="@string/gender"
                     android:paddingLeft="@dimen/dimen_10dp"
                     android:paddingRight="@dimen/dimen_10dp"
                     android:background="@drawable/background_grey_stroke_rectangle"
@@ -201,6 +208,8 @@
                     android:textColor="@color/colorWhite"
                     android:textColorHint="@color/colorTextHint"
                     android:textSize="13sp"
+                    android:focusable="false"
+                    android:cursorVisible="false"
                     />
 
 

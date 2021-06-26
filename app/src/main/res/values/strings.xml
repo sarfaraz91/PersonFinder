@@ -12,7 +12,6 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="my_interest">My Interests</string>
@@ -60,9 +59,7 @@
     <string name="request_new_password">Request New Password</string>
     <string name="enter_you_email_address">Enter you Email Address</string>
     <string name="email_address">Email Address</string>
-    <string name="username">Username</string>
     <string name="email_address_or_phone">Email Address/Phone Number</string>
-    <string name="email_address">Email Address</string>
     <string name="username">Username</string>
 
     <!-- Error Strings -->
@@ -82,11 +79,9 @@
     <string name="sign_up_with_facebook">Sign Up with facebook</string>
     <string name="full_name">Full Name</string>
     <string name="enter_your_full_name">Enter your full name</string>
-    <string name="email">Email</string>
     <string name="your_e_mail_goes_here">Your e-mail goes here</string>
     <string name="your_e_mail_goes_here_optional">Your e-mail goes here (Optional)</string>
     <string name="password_hint">*************</string>
-    <string name="password">Password</string>
     <string name="phone_number">Phone Number</string>
     <string name="_92">+92</string>
     <string name="sign_up">Sign Up</string>
@@ -95,6 +90,7 @@
     <string name="terms_and_conditions"> terms and conditions</string>
     <!-- Activity Sign Up -->
     <string name="password">Password</string>
+    <string name="dob">Date of Birth</string>
 
     <!-- Toast Strings -->
     <string name="toast_message_back_exit">Please click BACK again to exit</string>
@@ -114,7 +110,6 @@
     <string name="text_signing_in">Signing in...</string>
     <string name="text_signing_up">Signing up...</string>
     <!-- Activity SignIn -->
-    <string name="text_forgot_password">Forgot Password?</string>
 
     <!-- Activity Title -->
     <string name="title_activity_sign_in">Sign In</string>
@@ -131,7 +126,6 @@
     <string name="add_doctor">Add doctor</string>
     <string name="send_me_a_new_password">Send me a new password</string>
     <string name="text_find_doctors">Find a best doctor for your help \nand your family.</string>
-    <string name="register">Register</string>
     <string name="info">Info</string>
     <string name="unable_to_sign_in_with_google">Unable to sign in with google.</string>
     <string name="by_signingup_with_you_agree">By Signing Up you agree</string>
@@ -212,7 +206,6 @@
     <string name="name">Name</string>
     <string name="mobile">Mobile</string>
     <string name="language">Language</string>
-    <string name="change_password">Change Password</string>
     <string name="update">Update</string>
     <string name="save">Save</string>
     <string name="domain_name">\@telepolyclinic.com</string>
@@ -260,7 +253,6 @@
 
     <!-- Menu actions -->
     <string name="action_create_channel">Create channel</string>
-    <string name="lbl_ok">Ok</string>
     <string name="download">Download</string>
     <string name="upload">Upload</string>
     <string name="resend_message">Resend</string>
@@ -270,13 +262,8 @@
     <string name="message_sending">Sending</string>
     <string name="message_failed">Failed</string>
     <string name="keys">Keys</string>
-    <string name="skip"><u>Skip</u></string>
-    <string name="login">LOGIN</string>
     <string name="login_small">Login</string>
-    <string name="login_with_facebook">LOGIN WITH FACEBOOK</string>
     <string name="new_offers_web">NEW OFFERS WEB</string>
-    <string name="select_a_profile_picture_n_optional">Select a profile picture\n(Optional)</string>
-    <string name="repeat_password">Repeat Password</string>
     <string name="send">Send</string>
     <string name="please_enter_email_address">PLease enter email address\nso that we can send you a link\nto reset your password.</string>
     <string name="rd_email">Email required</string>
@@ -292,6 +279,8 @@
     <string name="rd_address">Address required</string>
     <string name="rd_gender">Gender required</string>
 
+    <string name="gender">Gender</string>
+    <string name="address">Address</string>
     <string name="my_offers">My Offers</string>
     <string name="favourites">Favourites</string>
     <string name="about_us">About Us</string>
@@ -315,14 +304,12 @@
     <string name="enter_store_location">Set store location</string>
     <!-- Menu actions -->
     <string name="lbl_ok">Ok</string>
-    <string name="lbl_network_error">Internet Connectivity Error</string>
     <!-- Message Status -->
     <string name="skip"><u>Skip</u></string>
     <string name="login">LOGIN</string>
     <string name="login_with_facebook">LOGIN WITH FACEBOOK</string>
     <string name="select_a_profile_picture_n_optional">Select a profile picture\n(Optional)</string>
     <string name="repeat_password">Repeat Password</string>
-    <string name="company_name">Company Name</string>
     <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
 
 
@@ -335,6 +322,8 @@
     <string name="note">Please click here to change the profile picture</string>
     <string name="cell_number">Cell Number</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="rd_dob">Date of birth required</string>
+    <string name="rd_password_length">Password length should be atleast 6</string>
 
 
 </resources>

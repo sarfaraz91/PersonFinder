@@ -69,11 +69,10 @@
                 android:layout_height="@dimen/dimen_40dp"
                 android:layout_marginTop="@dimen/dimen_33dp"
                 android:background="@drawable/background_grey_stroke_rectangle"
-                android:hint="@string/email_address"
+                android:hint="@string/username"
                 android:inputType="textEmailAddress"
                 android:paddingLeft="@dimen/dimen_10dp"
                 android:paddingRight="@dimen/dimen_10dp"
-                android:text="bassam@gmail.com"
                 android:textColor="@color/colorWhite"
                 android:textColorHint="@color/colorTextHint"
                 android:textSize="13sp" />
@@ -89,7 +88,6 @@
                 android:paddingLeft="@dimen/dimen_10dp"
                 android:paddingRight="@dimen/dimen_10dp"
                 android:scrollHorizontally="true"
-                android:text="123456"
                 android:textColor="@color/colorWhite"
                 android:textColorHint="@color/colorTextHint"
                 android:textSize="13sp" />
@@ -141,7 +139,8 @@
                 android:layout_marginTop="@dimen/dimen_30dp"
                 android:text="@string/text_forgot_password"
                 android:textColor="@color/colorWhite"
-                android:textSize="17sp" />
+                android:textSize="17sp"
+                android:visibility="gone"/>
 
             <TextView
                 android:id="@+id/register"

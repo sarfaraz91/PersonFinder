@@ -1,4 +1,4 @@
-package com.example.personfinder;
+package com.example.personfinder.ui.sign_in;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +16,9 @@ import com.example.personfinder.GeneralClasses.PreferencesHandler;
 import com.example.personfinder.Model.LoginResponse;
 import com.example.personfinder.Networking.ApiInterface;
 import com.example.personfinder.Networking.RetrofitClientInstance;
+import com.example.personfinder.R;
+import com.example.personfinder.ui.main_activity.MainActivity;
+import com.example.personfinder.ui.sign_up.SignUpActivity;
 import com.kaopiz.kprogresshud.KProgressHUD;
 
 import retrofit2.Call;
@@ -52,7 +55,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         password_et = findViewById(R.id.password_et);
         sign_in_btn = findViewById(R.id.sign_in_btn);
         sign_in_btn.setOnClickListener(this);
-        service = RetrofitClientInstance.getRetrofitInstance().create(ApiInterface.class);
+        service = RetrofitClientInstance.getInstance().getApi();
         register = findViewById(R.id.register);
         register.setOnClickListener(this);
         forgot_password_tv = findViewById(R.id.register);
@@ -70,15 +73,14 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
                 Global.mKProgressHUD.dismiss();
-                if(response.body().getStatus()){
-                  //  Log.d("signin","token : "+response.body().getApiToken());
-                 //   preferencesHandler.setLoginstatus(true);
-                 //   preferencesHandler.setApiToken(response.body().getApiToken());
-                    Toast.makeText(SignInActivity.this, "success", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(SignInActivity.this,MainActivity.class));
-                    finish();
-                }else{
-                    Toast.makeText(SignInActivity.this,response.body().getMessage(), Toast.LENGTH_SHORT).show();
+                if(response.body().getStatus() != null){
+                    if(response.body().getStatus()){
+                        preferencesHandler.setLoginstatus(true);
+                        startActivity(new Intent(SignInActivity.this,MainActivity.class));
+                        finish();
+                    }else{
+                        Toast.makeText(SignInActivity.this,response.body().getMessage(), Toast.LENGTH_SHORT).show();
+                    }
                 }
 
             }
@@ -126,10 +128,10 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
                 }
                 break;
             case R.id.register:
-                startActivity(new Intent(this,SignUpActivity.class));
+                startActivity(new Intent(this, SignUpActivity.class));
                 break;
             case R.id.tv_skip:
-                startActivity(new Intent(this,MainActivity.class));
+                startActivity(new Intent(this, MainActivity.class));
                 break;
         }
     }
