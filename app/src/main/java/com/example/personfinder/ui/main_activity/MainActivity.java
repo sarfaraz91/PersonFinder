@@ -1,7 +1,6 @@
 package com.example.personfinder.ui.main_activity;
 
 import android.os.Bundle;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -14,7 +13,6 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.personfinder.R;
 import com.example.personfinder.databinding.ActivityMainBinding;
-import com.shreyaspatil.material.navigationview.MaterialNavigationView;
 
 public class MainActivity extends AppCompatActivity {
     public static MainActivity instance;
@@ -42,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 //        binding.navView.setItemStyle(MaterialNavigationView.ITEM_STYLE_ROUND_RIGHT);
         navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         appBarConfiguration = new AppBarConfiguration
-                .Builder(R.id.nav_home, R.id.nav_profile, R.id.nav_map)
+                .Builder(R.id.nav_home, R.id.nav_profile, R.id.nav_create_post)
                 .setDrawerLayout(binding.drawerLayout)
                 .build();
 

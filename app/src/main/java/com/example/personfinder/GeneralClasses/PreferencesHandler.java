@@ -179,27 +179,27 @@ public class PreferencesHandler {
         editor.commit();
     }
 
-    public String getUserid() {
-        return pref.getString(USERID, "");
+    public Integer getUserid() {
+        return pref.getInt(USERID, -1);
     }
 
-    public void setUserid(String userid) {
-        editor.putString(USERID, userid);
+    public void setUserid(Integer userid) {
+        editor.putInt(USERID, userid);
         editor.apply();
         editor.commit();
     }
 
-    public String getApiToken() {
-        return pref.getString(API_TOKEN, "");
+    public Integer getApiToken() {
+        return pref.getInt(API_TOKEN, -1);
     }
 
-    public void setApiToken(String bearerToken) {
-        editor.putString(API_TOKEN, bearerToken);
+    public void setApiToken(Integer bearerToken) {
+        editor.putInt(API_TOKEN, bearerToken);
         editor.apply();
         editor.commit();
     }
 
-    public void setStatus(boolean isActive){
+    public void setStatus(boolean isActive) {
         editor.putBoolean(STATUS, isActive);
         editor.apply();
         editor.commit();

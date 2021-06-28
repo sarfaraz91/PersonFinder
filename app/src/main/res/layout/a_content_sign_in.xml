@@ -2,11 +2,9 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPurple"
+    android:background="@color/colorPrimary"
     android:paddingTop="@dimen/dimen_16dp">
 
     <TextView
@@ -54,7 +52,7 @@
                 android:id="@+id/logo_iv"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_80dp"
-                android:src="@drawable/pflogo" />
+                android:src="@drawable/new_logo_2" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -101,7 +99,7 @@
                 android:layout_marginTop="@dimen/dimen_30dp"
                 android:background="@drawable/background_button_pink_5dp"
                 android:text="@string/login"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/white"
                 android:textSize="19sp" />
 
             <LinearLayout

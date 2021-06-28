@@ -326,4 +326,42 @@
     <string name="rd_password_length">Password length should be atleast 6</string>
 
 
+    <!--    <string name="address">Address</string>-->
+    <!--    <string name="gender">Gender</string>-->
+    <string name="required">*</string>
+    <string name="country">Country</string>
+    <string name="todo">TODO</string>
+    <!--    <string name="update">Update</string>-->
+    <string name="cell_invalid">The Mobile Number is invalid</string>
+    <string name="uname_error">The Username field is required.</string>
+    <string name="fname_error">The First Name field is required.</string>
+    <string name="faname_error">The Fathers Name field is required.</string>
+    <string name="cnic_error">The CNIC field is required.</string>
+    <string name="person_age_error">The Person Age field is required.</string>
+    <string name="person_height_error">The Person Height field is required.</string>
+    <string name="address_error">The Address field is required.</string>
+    <string name="person_status_error">The Person Status field is required.</string>
+    <string name="desc_error">The Description field is required.</string>
+    <string name="landline_error">The Landline field is required.</string>
+    <string name="date_error">The Date field is required.</string>
+    <string name="dob_error">The Date Of Birth field is required.</string>
+    <string name="pass_error">The Password field is required.</string>
+    <string name="gender_error">The Gender field is required.</string>
+    <string name="valid_email_error">The email must be a valid email address.</string>
+    <string name="select_due_date">Select Due Date</string>
+    <string name="pleaseWait">Please wait....</string>
+    <string name="no_internet">No Internet Connectivity</string>
+    <string name="first_name">First Name</string>
+    <string name="fathers_name">Fathers Name</string>
+    <string name="cnic">CNIC</string>
+    <string name="select_date_of_birth">Select Date Of Birth</string>
+    <string name="person_age">Person Age</string>
+    <string name="person_height">Person Height</string>
+    <string name="create_post">Create Post</string>
+    <string name="person_status">Person Status</string>
+    <string name="description">Description</string>
+    <string name="search">Search</string>
+    <string name="mobile_number">Mobile Number</string>
+
+
 </resources>

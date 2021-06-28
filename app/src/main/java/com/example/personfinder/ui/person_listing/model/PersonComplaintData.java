@@ -3,7 +3,9 @@ package com.example.personfinder.ui.person_listing.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class PersonComplaintData {
+import java.io.Serializable;
+
+public class PersonComplaintData implements Serializable {
     @SerializedName("ID")
     @Expose
     private Double id;

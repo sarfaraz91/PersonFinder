@@ -16,7 +16,10 @@
     <color name="secondaryDarkColor">#0039cb</color>
     <color name="primaryTextColor">#eceff1</color>
     <color name="secondaryTextColor">#fafafa</color>
-
+    <color name="loginUsernameHint">#CFCCD5</color>
+    <color name="bg_colour">#f8f8f8</color>
+    <color name="blood_red">#CE0000</color>
+    <color name="d_grey">#7d7d7d</color>
     <!-- Open Chat -->
 
     <!-- Group Chat -->

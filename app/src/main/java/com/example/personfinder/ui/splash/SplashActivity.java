@@ -32,11 +32,10 @@ public class SplashActivity extends AppCompatActivity {
                 finish();
                 if (preferencesHandler.getLoginstatus() == true) {
                     startActivity(new Intent(SplashActivity.this, MainActivity.class));
-                    finish();
-                }else{
+                } else {
                     startActivity(new Intent(SplashActivity.this, SignInActivity.class));
-                    finish();
                 }
+                finish();
 
             }
         }, 1500);

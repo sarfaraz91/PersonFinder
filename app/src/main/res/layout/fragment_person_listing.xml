@@ -58,10 +58,46 @@
                 android:layout_marginEnd="@dimen/_10ssp"
                 android:visibility="visible">
 
-                <Spinner
-                    android:id="@+id/isActive"
+                <EditText
+                    android:id="@+id/search"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/outline_border"
+                    android:cursorVisible="true"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_10ssp"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="@dimen/_6ssp"
+                    android:background="@color/white"
+                    android:paddingStart="@dimen/_2ssp"
+                    android:paddingEnd="@dimen/_2ssp"
+                    android:text="@string/search"
+                    android:textSize="@dimen/_8ssp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50ssp"
+                android:layout_marginStart="@dimen/_10ssp"
+                android:layout_marginEnd="@dimen/_10ssp"
+                android:visibility="visible">
+
+                <Spinner
+                    android:id="@+id/personStatusSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/_2ssp"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/outline_border"
                     android:textSize="@dimen/_12ssp" />
@@ -113,8 +149,8 @@
         </LinearLayout>
 
         <include
-            android:id="@+id/no_records"
-            layout="@layout/no_record_found" />
+            layout="@layout/no_record_found"
+            android:id="@+id/no_records"/>
 
     </RelativeLayout>
 

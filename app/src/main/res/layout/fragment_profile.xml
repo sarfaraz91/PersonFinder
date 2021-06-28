@@ -22,6 +22,7 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
+                    android:visibility="gone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -48,6 +49,7 @@
 
                 <TextView
                     android:id="@+id/optionalTxt"
+                    android:visibility="gone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -60,16 +62,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_45ssp"
                     android:layout_below="@+id/note"
-                    android:layout_marginTop="@dimen/_20ssp">
+                    android:layout_marginTop="@dimen/_10ssp">
 
                     <EditText
-                        android:id="@+id/profileName"
+                        android:id="@+id/userName"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="15dp"
                         android:background="@drawable/outline_border"
                         android:inputType="text"
                         android:paddingLeft="@dimen/_10ssp"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
                         android:paddingRight="@dimen/_10ssp"
                         android:textSize="@dimen/_12ssp" />
 
@@ -82,7 +86,7 @@
                         android:background="@color/white"
                         android:paddingStart="@dimen/_2ssp"
                         android:paddingLeft="@dimen/_2ssp"
-                        android:text="@string/fName"
+                        android:text="@string/username"
                         android:textSize="@dimen/_8ssp" />
 
                     <TextView
@@ -98,48 +102,6 @@
 
                 </RelativeLayout>
 
-                <RelativeLayout
-                    android:id="@+id/lNameLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_45ssp"
-                    android:layout_below="@+id/fNameLayout"
-                    android:layout_marginTop="@dimen/_5ssp">
-
-                    <EditText
-                        android:id="@+id/profileSurName"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="15dp"
-                        android:background="@drawable/outline_border"
-                        android:inputType="text"
-                        android:paddingLeft="@dimen/_10ssp"
-                        android:paddingRight="@dimen/_10ssp"
-                        android:textSize="@dimen/_12ssp" />
-
-                    <TextView
-                        android:id="@+id/lNameTxt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="@dimen/_6ssp"
-                        android:background="@color/white"
-                        android:paddingStart="@dimen/_2ssp"
-                        android:paddingLeft="@dimen/_2ssp"
-                        android:text="@string/surName"
-                        android:textSize="@dimen/_8ssp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_6ssp"
-                        android:layout_toRightOf="@+id/lNameTxt"
-                        android:background="@color/white"
-                        android:paddingLeft="@dimen/_2ssp"
-                        android:paddingRight="@dimen/_2ssp"
-                        android:text="*"
-                        android:textSize="@dimen/_8ssp" />
-
-                </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/emailLayout"
@@ -148,12 +110,13 @@
                     android:layout_marginTop="@dimen/_5ssp">
 
                     <EditText
-                        android:id="@+id/profileEmail"
+                        android:id="@+id/email"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="15dp"
                         android:background="@drawable/outline_border"
-                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
                         android:inputType="textEmailAddress"
                         android:paddingLeft="@dimen/_10ssp"
                         android:paddingRight="@dimen/_10ssp"
@@ -248,23 +211,126 @@
                             android:background="@color/white"
                             android:paddingLeft="@dimen/_2ssp"
                             android:paddingRight="@dimen/_2ssp"
-                            android:text="@string/cell_number"
+                            android:text="@string/mobile_number"
                             android:textSize="@dimen/_8ssp" />
 
                         <ImageView
                             android:id="@+id/cellValidity"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginTop="@dimen/_22ssp"
-                            android:layout_marginRight="@dimen/_7ssp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_7ssp"
+                            android:paddingTop="@dimen/_12ssp"
                             android:visibility="gone" />
 
                     </RelativeLayout>
 
                 </LinearLayout>
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45ssp"
+                    android:visibility="visible">
 
+                    <TextView
+                        android:id="@+id/dueDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/outline_border"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/_10ssp"
+                        android:paddingEnd="@dimen/_10ssp"
+                        android:textSize="@dimen/_10ssp"
+                        app:drawableEndCompat="@drawable/ic_event" />
+
+                    <TextView
+                        android:id="@+id/due_date_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="@dimen/_6ssp"
+                        android:background="@color/white"
+                        android:paddingStart="@dimen/_2ssp"
+                        android:paddingEnd="@dimen/_2ssp"
+                        android:text="@string/select_due_date"
+                        android:textSize="@dimen/_8ssp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45ssp"
+                    android:layout_marginTop="@dimen/_10ssp">
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/outline_border"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/_10ssp"
+                        android:paddingRight="@dimen/_10ssp"
+
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:id="@+id/addressTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="@dimen/_6ssp"
+                        android:background="@color/white"
+                        android:paddingStart="@dimen/_2ssp"
+                        android:text="@string/address"
+                        android:textSize="@dimen/_8ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6ssp"
+                        android:layout_toEndOf="@+id/addressTxt"
+                        android:background="@color/white"
+                        android:paddingLeft="@dimen/_2ssp"
+                        android:paddingRight="@dimen/_2ssp"
+                        android:text="*"
+                        android:textSize="@dimen/_8ssp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45ssp"
+                    android:layout_marginTop="@dimen/_10ssp">
+
+                    <Spinner
+                        android:id="@+id/genderSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/outline_border"
+                        android:paddingStart="@dimen/_2ssp"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="@dimen/_6ssp"
+                        android:background="@color/white"
+                        android:paddingStart="@dimen/_2ssp"
+                        android:paddingEnd="@dimen/_2ssp"
+                        android:text="@string/gender"
+                        android:textSize="@dimen/_8ssp" />
+
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/passTextLayout"
@@ -303,8 +369,12 @@
                         android:layout_height="match_parent"
                         android:layout_marginTop="15dp"
                         android:background="@drawable/outline_border"
+
+                        android:inputType="textPassword"
+                        android:textColor="@color/black"
                         android:paddingLeft="@dimen/_10ssp"
                         android:paddingRight="@dimen/_10ssp"
+                        android:textCursorDrawable="@null"
                         android:textSize="@dimen/_12ssp" />
 
                     <TextView
@@ -339,6 +409,7 @@
                     android:id="@+id/passLayout"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_45ssp"
+                    android:visibility="gone"
                     android:layout_marginTop="@dimen/_5ssp">
 
                     <EditText
@@ -348,6 +419,8 @@
                         android:layout_marginTop="15dp"
                         android:background="@drawable/outline_border"
                         android:paddingLeft="@dimen/_10ssp"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
                         android:paddingRight="@dimen/_10ssp"
                         android:textSize="@dimen/_12ssp" />
 
@@ -380,21 +453,16 @@
 
                 </RelativeLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
-
                 <Button
                     android:id="@+id/updateProfile"
-                    style="@style/NonCapsButton"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40ssp"
+                    android:layout_height="@dimen/_45ssp"
+                    android:layout_marginTop="@dimen/_20ssp"
                     android:layout_marginBottom="@dimen/_20ssp"
                     android:background="@drawable/background_button_pink_5dp"
-                    android:text="@string/login"
+                    android:text="@string/update"
                     android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/_13ssp" />
+                    android:textSize="@dimen/_11ssp" />
             </LinearLayout>
 
         </ScrollView>

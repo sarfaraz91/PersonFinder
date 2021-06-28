@@ -15,9 +15,11 @@ import android.net.Uri;
 import android.os.Environment;
 import android.os.Handler;
 import android.provider.OpenableColumns;
+import android.text.TextUtils;
 import android.util.Base64;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
@@ -30,6 +32,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.core.app.ActivityCompat;
@@ -48,6 +51,7 @@ import com.example.personfinder.Arrays.MenuArray;
 import com.example.personfinder.Database.SqliteDataHelper;
 import com.example.personfinder.R;
 import com.google.android.material.snackbar.Snackbar;
+import com.hbb20.CountryCodePicker;
 import com.kaopiz.kprogresshud.KProgressHUD;
 
 import org.json.JSONArray;
@@ -72,6 +76,10 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+
+import io.michaelrocks.libphonenumber.android.NumberParseException;
+import io.michaelrocks.libphonenumber.android.PhoneNumberUtil;
+import io.michaelrocks.libphonenumber.android.Phonenumber;
 
 @SuppressWarnings("ResourceType")
 public class Global {
@@ -246,10 +254,87 @@ public class Global {
         }
     }
 
+    public static String parseDateToAPIFormat(String date) {
+        String inputPattern = "MMM dd, yyyy";
+        String outputPattern = "yyyy-MM-dd";
+        SimpleDateFormat inputFormat = new SimpleDateFormat(inputPattern);
+        SimpleDateFormat outputFormat = new SimpleDateFormat(outputPattern);
+
+        Date newDate = null;
+        String str = null;
+
+        try {
+            newDate = inputFormat.parse(date);
+            str = outputFormat.format(newDate);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        //Added by haris to remove the edit lead issue
+        if (str == null) {
+            str = "";
+        }
+
+        return str;
+    }
     public static void showSnackbar(View view, String message) {
         Snackbar.make(view, message,
                 Snackbar.LENGTH_SHORT).show();
+    }
 
+    public static boolean isValidEmail(CharSequence target) {
+        return (!TextUtils.isEmpty(target) && Patterns.EMAIL_ADDRESS.matcher(target).matches());
+    }
+
+    public static void showSnackbar(Context context, RelativeLayout container, String msg) {
+        Snackbar snackbar = Snackbar.make(container, msg, Snackbar.LENGTH_SHORT);
+        View snackbarView = snackbar.getView();
+        snackbarView.setBackgroundColor(ContextCompat.getColor(context, R.color.blood_red));
+
+        TextView tv = (snackbar.getView()).findViewById(R.id.snackbar_text);
+        tv.setTextSize(15);
+        snackbar.show();
+    }
+
+    public static long getCountryIsoCode(Context context, String number, CountryCodePicker ccp) {
+        long nationalNumber = 0;
+        try {
+            PhoneNumberUtil phoneNumberUtil = PhoneNumberUtil.createInstance(context);
+            Phonenumber.PhoneNumber phoneNumber = phoneNumberUtil.parse(number, null);
+            nationalNumber = phoneNumber.getNationalNumber();
+
+            if (phoneNumber.getCountryCode() == 1)
+                ccp.setCountryForNameCode("US");
+
+            else if (phoneNumber.getCountryCode() == 44)
+                ccp.setCountryForNameCode("GB");
+
+            else
+                ccp.setCountryForPhoneCode(phoneNumber.getCountryCode());
+
+        } catch (NumberParseException e) {
+            e.printStackTrace();
+        }
+        return nationalNumber;
+    }
+
+
+    public static String parseDate(String date) {
+        String returnDate = "";
+        SimpleDateFormat spf = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            if (date != null) {
+                Date newDate = spf.parse(date);
+
+                //Changed MMMM to MMM
+                spf = new SimpleDateFormat("MMM dd, yyyy");
+                returnDate = spf.format(newDate);
+            } else
+                returnDate = "";
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return returnDate;
     }
 
     public static String convertBitmapToBase64(Bitmap bitmap) {

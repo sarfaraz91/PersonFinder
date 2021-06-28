@@ -2,7 +2,6 @@ package com.example.personfinder.ui.sign_in;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.personfinder.GeneralClasses.Global;
 import com.example.personfinder.GeneralClasses.PreferencesHandler;
 import com.example.personfinder.Model.LoginResponse;
+import com.example.personfinder.Model.User;
 import com.example.personfinder.Networking.ApiInterface;
 import com.example.personfinder.Networking.RetrofitClientInstance;
 import com.example.personfinder.R;
@@ -73,13 +73,17 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
                 Global.mKProgressHUD.dismiss();
-                if(response.body().getStatus() != null){
-                    if(response.body().getStatus()){
+                if (response.body().getStatus() != null) {
+                    if (response.body().getStatus()) {
+                        LoginResponse loginResponse = response.body();
+                        User user = loginResponse.getUser();
                         preferencesHandler.setLoginstatus(true);
-                        startActivity(new Intent(SignInActivity.this,MainActivity.class));
+                        preferencesHandler.setUserid(user.getUserId());
+                        preferencesHandler.setApiToken(user.getToken());
+                        startActivity(new Intent(SignInActivity.this, MainActivity.class));
                         finish();
-                    }else{
-                        Toast.makeText(SignInActivity.this,response.body().getMessage(), Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(SignInActivity.this, response.body().getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 }
 

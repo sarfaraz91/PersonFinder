@@ -3,12 +3,12 @@ package com.example.personfinder.ui.person_listing.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class PersonComplaintListingRoot {
     @SerializedName("ComplaintList")
     @Expose
-    private List<PersonComplaintData> complaintList = null;
+    private ArrayList<PersonComplaintData> complaintList = null;
     @SerializedName("Status")
     @Expose
     private Boolean status;
@@ -19,11 +19,11 @@ public class PersonComplaintListingRoot {
     @Expose
     private String message;
 
-    public List<PersonComplaintData> getComplaintList() {
+    public ArrayList<PersonComplaintData> getComplaintList() {
         return complaintList;
     }
 
-    public void setComplaintList(List<PersonComplaintData> complaintList) {
+    public void setComplaintList(ArrayList<PersonComplaintData> complaintList) {
         this.complaintList = complaintList;
     }
 

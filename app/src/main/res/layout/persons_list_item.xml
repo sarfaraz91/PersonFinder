@@ -7,19 +7,19 @@
     android:layout_marginTop="@dimen/_5ssp"
     android:layout_marginEnd="@dimen/_10ssp"
     android:layout_marginBottom="@dimen/_5ssp"
-    android:elevation="@dimen/_2ssp"
-    app:cardCornerRadius="@dimen/_3ssp">
+    android:elevation="@dimen/_5ssp"
+    app:cardCornerRadius="@dimen/_10ssp">
 
     <LinearLayout
         android:id="@+id/topLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:background="@color/primaryLightColor"
         android:orientation="horizontal">
 
 
-        <RelativeLayout
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10ssp"
@@ -27,25 +27,42 @@
             android:layout_marginEnd="@dimen/_10ssp"
             android:layout_marginBottom="@dimen/_15ssp">
 
-            <TextView
-                android:id="@+id/vendorTitle"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3ssp"
+                    android:layout_marginEnd="@dimen/_5ssp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Person Name: "
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_10ssp" />
+
+
+                <TextView
+                    android:id="@+id/personTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3ssp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+
+                    android:text="Hassan Ullah"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/_10ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_5ssp"
-                android:ellipsize="end"
-                android:maxLines="2"
-                android:text="Kashif Abbasi"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_12ssp" />
-
-
-            <LinearLayout
-                android:id="@+id/companyContainer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/vendorTitle"
                 android:orientation="horizontal">
-
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -54,97 +71,78 @@
                     android:layout_marginEnd="@dimen/_5ssp"
                     android:ellipsize="end"
                     android:maxLines="1"
-                    android:text="asdasd"
-                    android:textColor="@color/black"
+                    android:text="Age: "
+                    android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/_10ssp" />
 
 
                 <TextView
-                    android:id="@+id/companyName"
+                    android:id="@+id/age"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_3ssp"
                     android:ellipsize="end"
                     android:maxLines="1"
 
-                    android:text="Stark Industries"
+                    android:text="21"
                     android:textColor="@color/dark_gray"
                     android:textSize="@dimen/_10ssp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/emailContainer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/companyContainer"
-                android:orientation="horizontal">
-
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5ssp"
                     android:layout_marginTop="@dimen/_3ssp"
                     android:layout_marginEnd="@dimen/_5ssp"
                     android:ellipsize="end"
                     android:maxLines="1"
-                    android:text="email"
-                    android:textColor="@color/black"
+                    android:text="Height: "
+                    android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/_10ssp" />
 
 
                 <TextView
-                    android:id="@+id/email"
+                    android:id="@+id/height"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_3ssp"
                     android:ellipsize="end"
                     android:maxLines="1"
-                    android:text="one@one.com"
+
+                    android:text="5.9"
                     android:textColor="@color/dark_gray"
-
                     android:textSize="@dimen/_10ssp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/contactContainer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/emailContainer"
-                android:orientation="horizontal">
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5ssp"
                     android:layout_marginTop="@dimen/_3ssp"
                     android:layout_marginEnd="@dimen/_5ssp"
                     android:ellipsize="end"
                     android:maxLines="1"
-                    android:text="contact"
-                    android:textColor="@color/black"
+                    android:text="Data of Birth: "
+                    android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/_10ssp" />
 
 
                 <TextView
-                    android:id="@+id/contact"
+                    android:id="@+id/dob"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_3ssp"
                     android:ellipsize="end"
-                    android:maxLines="1"
-                    android:text="+92365658560"
+                    android:text="24 March, 2000"
                     android:textColor="@color/dark_gray"
-
                     android:textSize="@dimen/_10ssp" />
+
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/contactContainer"
                 android:orientation="horizontal">
 
 
@@ -155,8 +153,174 @@
                     android:layout_marginEnd="@dimen/_5ssp"
                     android:ellipsize="end"
                     android:maxLines="1"
-                    android:text="status"
-                    android:textColor="@color/black"
+                    android:text="CNIC: "
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_10ssp" />
+
+
+                <TextView
+                    android:id="@+id/cnic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3ssp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+
+                    android:text="41202-2029320-1"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/_10ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3ssp"
+                    android:layout_marginEnd="@dimen/_5ssp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Address: "
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_10ssp" />
+
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3ssp"
+                    android:ellipsize="end"
+                    android:text="kk, Karachi, Sindh, Pakistan"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/_10ssp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5ssp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3ssp"
+                        android:layout_marginEnd="@dimen/_5ssp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Mobile No: "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_10ssp" />
+
+
+                    <TextView
+                        android:id="@+id/mobileNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3ssp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="+92365658560"
+                        android:textColor="@color/dark_gray"
+
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3ssp"
+                        android:layout_marginEnd="@dimen/_5ssp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Landline: "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_10ssp" />
+
+
+                    <TextView
+                        android:id="@+id/landline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3ssp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="(012)-54531254"
+                        android:textColor="@color/dark_gray"
+
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3ssp"
+                    android:layout_marginEnd="@dimen/_5ssp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Description: "
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_10ssp" />
+
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3ssp"
+                    android:ellipsize="end"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/_10ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3ssp"
+                    android:layout_marginEnd="@dimen/_5ssp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Status: "
+                    android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/_10ssp" />
 
 
@@ -167,14 +331,40 @@
                     android:layout_marginTop="@dimen/_3ssp"
                     android:ellipsize="end"
                     android:maxLines="1"
-                    android:text="Active"
+                    android:text="Found"
                     android:textColor="@color/dark_gray"
                     android:textSize="@dimen/_10ssp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5ssp"
+                    android:layout_marginTop="@dimen/_3ssp"
+                    android:layout_marginEnd="@dimen/_5ssp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Is Mentally Disturb? "
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_10ssp" />
+
+
+                <TextView
+                    android:id="@+id/isMentallyDisturb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3ssp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="No"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/_10ssp" />
+
 
             </LinearLayout>
 
 
-        </RelativeLayout>
+        </LinearLayout>
 
 
     </LinearLayout>
